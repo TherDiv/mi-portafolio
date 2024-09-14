@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 👨🏻‍💻 Porfolio para programadores y desarrolladores
 
 <div align="center">
@@ -25,3 +26,6 @@
 </a>
 
 <p></p>
+=======
+# mi-portafolio
+>>>>>>> d5ac04c063b0466ffb3be6f21ed9b14073eb7e65
