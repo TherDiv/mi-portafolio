@@ -12,25 +12,34 @@ import Hero from "@/components/Hero.astro"
 import TitleSection from "@/components/TitleSection.astro"
 ---
 
+// Cambiar el título y la descripción para reflejar tu perfil
 <Layout
-  title="Porfolio de midudev - Desarrollador y Programador Web con 15 años de experiencia"
-  description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
+  title="Portfolio de Esther Ticlla - Diseñadora UI/UX y Desarrolladora Frontend"
+  description="Explora el portafolio de Esther Ticlla, diseñadora de interfaces disruptivas y desarrolladora frontend con experiencia en React, Figma y más. Disponible para proyectos de diseño y desarrollo."
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
       <Hero>
-      </slot>
-    </Hero>
+        <!-- Aquí puedes agregar información de introducción personalizada -->
+        <h1 class="text-4xl font-bold">¡Hola! Soy Esther Ticlla</h1>
+        <p class="mt-4 text-xl">
+          Diseñadora UI/UX apasionada y desarrolladora frontend. Me encanta crear experiencias digitales únicas y optimizadas.
+        </p>
+      </Hero>
     </SectionContainer>
+
     <div class="space-y-24">
+    
+    <!-- Sección de Experiencia -->
     <SectionContainer id="experiencia">
       <TitleSection>
         <Briefcase class="size-8" />
-        Experiencia laboral
+        Experiencia Profesional
       </TitleSection>
       <Experience />
     </SectionContainer>
 
+    <!-- Sección de Proyectos -->
     <SectionContainer id="proyectos">
       <TitleSection>
         <CodeIcon class="size-7" />
@@ -39,6 +48,7 @@ import TitleSection from "@/components/TitleSection.astro"
       <Projects />
     </SectionContainer>
 
+    <!-- Sección Sobre Mí -->
     <SectionContainer id="sobre-mi">
       <TitleSection>
         <ProfileCheck class="size-8" />
@@ -46,6 +56,7 @@ import TitleSection from "@/components/TitleSection.astro"
       </TitleSection>
       <AboutMe />
     </SectionContainer>
-  </div>
+    
+    </div>
   </main>
 </Layout>
